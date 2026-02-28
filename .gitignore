@@ -1,0 +1,6 @@
+# Build outputs
+bin/
+
+# Optional local caches
+.pytest_cache/
+__pycache__/
