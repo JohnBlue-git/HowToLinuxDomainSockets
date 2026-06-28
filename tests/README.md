@@ -85,7 +85,7 @@ Each scenario records:
 
 Default load in current tests is:
 
-- `clients=40`
+- `clients=999`
 - `loops=300`
 - `payload_size=64`
 

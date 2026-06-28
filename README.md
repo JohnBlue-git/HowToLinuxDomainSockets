@@ -97,12 +97,12 @@ What "workload-dependent" means here:
 
 | scenario | throughput(msg/s) | peak_rss_kb | elapsed_sec | clients | loops | payload |
 |---|---:|---:|---:|---:|---:|---:|
-| thread_per_client_tcp | 24695.96 | 4096 | 0.4859 | 40 | 300 | 64 |
-| event_driven_tcp_select | 38936.85 | 3456 | 0.3082 | 40 | 300 | 64 |
-| event_driven_tcp_poll | 42394.78 | 3328 | 0.2831 | 40 | 300 | 64 |
-| event_driven_tcp_epoll | 37428.67 | 3328 | 0.3206 | 40 | 300 | 64 |
-| unix_domain_socket_poll | 52995.45 | 3328 | 0.2264 | 40 | 300 | 64 |
-| unix_domain_socket_epoll | 34135.63 | 3328 | 0.3515 | 40 | 300 | 64 |
+| thread_per_client_tcp    | 17330.20          | 13280       | 17.2935     | 999     | 300   | 64      |
+| event_driven_tcp_select  | 15719.43          | 3484        | 19.0656     | 999     | 300   | 64      |
+| event_driven_tcp_poll    | 14863.92          | 3580        | 20.1629     | 999     | 300   | 64      |
+| event_driven_tcp_epoll   | 16461.42          | 3456        | 18.2062     | 999     | 300   | 64      |
+| unix_domain_socket_poll  | 18649.22          | 3400        | 16.0704     | 999     | 300   | 64      |
+| unix_domain_socket_epoll | 21429.66          | 3328        | 13.9853     | 999     | 300   | 64      |
 
 ### Test Result Field Definitions
 

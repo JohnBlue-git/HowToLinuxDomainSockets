@@ -166,7 +166,7 @@ def test_thread_per_client_tcp(pytestconfig):
         ready_func=lambda: wait_tcp_ready(host, port),
         worker_func=tcp_worker,
         worker_args=(host, port),
-        clients=40,
+        clients=999,
         loops=300,
         payload_size=64,
     )
@@ -186,7 +186,7 @@ def test_event_driven_tcp_modes(pytestconfig, mode: str, port: int):
         ready_func=lambda: wait_tcp_ready(host, port),
         worker_func=tcp_worker,
         worker_args=(host, port),
-        clients=40,
+        clients=999,
         loops=300,
         payload_size=64,
     )
@@ -215,7 +215,7 @@ def test_unix_domain_socket_modes(pytestconfig, mode: str, socket_path: str):
         ready_func=lambda: wait_unix_ready(socket_path),
         worker_func=unix_worker,
         worker_args=(socket_path,),
-        clients=40,
+        clients=999,
         loops=300,
         payload_size=64,
     )
